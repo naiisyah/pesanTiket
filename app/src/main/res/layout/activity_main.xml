@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pemesanan Tiket Kereta"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"/>
+
+        <!-- Nama Pemesanan Input -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_user" />
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Pemesanan"
+                android:padding="10dp"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <!-- Jam Keberangkatan Input -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_time" />
+
+            <EditText
+                android:id="@+id/show_jam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Jam Keberangkatan"
+                android:padding="10dp"
+                android:focusable="false"
+                android:inputType="none"/>
+        </LinearLayout>
+
+        <!-- Tanggal Keberangkatan Input -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_date"
+                android:layout_gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/show_tanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pilih Tanggal Keberangkatan"
+                android:padding="10dp"
+                android:focusable="false"
+                android:inputType="none"/>
+        </LinearLayout>
+
+        <!-- Tujuan Input -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_location" />
+
+            <Spinner
+                android:id="@+id/spinner_tujuan"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:inputType="textPassword"/>
+
+        </LinearLayout>
+
+        <!-- Pesan Tiket Button -->
+        <Button
+            android:id="@+id/btn_pesan_tiket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pesan Tiket"
+            android:backgroundTint="@color/blue"
+            android:textColor="@android:color/white"
+            android:padding="16dp"
+            android:layout_marginTop="30dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

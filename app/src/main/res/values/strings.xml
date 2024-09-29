@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Country App</string>
+
+    <array name="tujuan">
+        <item>Solo</item>
+        <item>Semarang</item>
+        <item>Yogyakarta</item>
+        <item>Jakarta</item>
+        <item>Bandung</item>
+    </array>
+
+    <!-- integer array untuk harga -->
+    <integer-array name="harga">
+        <item>8000</item>
+        <item>15000</item>
+        <item>23000</item>
+        <item>350000</item>
+        <item>50000</item>
+    </integer-array>
+</resources>
